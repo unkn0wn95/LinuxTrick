@@ -1,0 +1,12 @@
+
+[share]
+	comment=Samba Share
+	path=/opt
+	browsable=yes
+	guest ok=yes
+	read only=no
+	create mask = 0755
+
+sudo systemctl restart smbd
+sudo systemctl start smbd
+sudo systemctl stop smbd
