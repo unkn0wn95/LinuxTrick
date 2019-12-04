@@ -1,0 +1,2 @@
+nojs npm servez
+pip install you-get
