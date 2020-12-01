@@ -1,0 +1,6 @@
+How To Convert Image:(https://superuser.com/questions/71028/batch-converting-png-to-jpg-in-linux)
+
+Step1:Install ImageMagick
+
+Step2:type in command line:
+		convert image.png(nameoffile) image.jpg(outputoffile)
