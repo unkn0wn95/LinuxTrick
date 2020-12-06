@@ -1,0 +1,13 @@
+Command in manjaro linux:
+
+Update and Upgrade Full System:
+	sudo pacman -Syyu
+	
+Install package:
+	sudo pacman -S nameofpackage
+
+search package:
+	sudo pacman -Ss nameofpackage
+	
+clean autoremove:
+	sudo pacman -Rcns $(pacman -Qdtq) 
