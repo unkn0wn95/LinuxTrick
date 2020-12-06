@@ -1,0 +1,12 @@
+How to encrypt Zip files and Unzip:(https://itsfoss.com/password-protect-zip-file/)
+
+Step 1: 
+	Run sudo apt install zip unzip
+
+Step 2:
+	If you want to encrypt and zip the file:
+		Run zip -re output_file.zip file1 folder1
+
+Step 3:
+	If you want to unzip the file:
+		Run unzip output_file.zip
