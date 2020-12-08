@@ -1,0 +1,24 @@
+How to Check And Fix HDD filesystem:
+	(https://www.linuxuprising.com/2019/05/how-to-force-fsck-filesystem.html#:~:text=To%20stop%20force%2Dchecking%20your,update%20grub%2C%20as%20already%20explained.)
+
+Fix Using USB Stick:
+	Unmount:
+		sudo fdisk -l
+	Check name of partition:
+		lsblk
+	Fix Partition:
+		sudo fsck -y /dev/nameofpartition
+
+Fix on Every Boot:
+	The root partition should be set to 1 (first to be checked), while other partitions you want to be checked should be set to 2:
+		Example:
+			# /etc/fstab: static file system information.
+
+			/dev/sda1  /      ext4  errors=remount-ro  0  1
+			/dev/sda5  /home  ext4  defaults           0  2
+	Change the Pass to 1 for the root partition:
+		sudo vim /etc/fstab 
+	Command:
+		sudo tune2fs -c 1 /dev/nameofpartition
+	Undo Command No longer want to fix on boot:
+		sudo tune2fs -c -1 /dev/nameofparitition
