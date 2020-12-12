@@ -15,3 +15,7 @@ Download by link in txt file:
 	
 Download Kitab Turath:
 	youtube-dl -f best -ciw -o "(منظومة المطلب)(في آداب طالب العلم) Ep.%(autonumber)2d.%(ext)s" -a list.txt
+	
+Download Whole Channel:
+	(https://askubuntu.com/questions/856911/using-youtube-dl-to-download-entire-youtube-channel)
+	youtube-dl -f best -ciw -o "%(title)s.%(ext)s" -v <url-of-channel>
