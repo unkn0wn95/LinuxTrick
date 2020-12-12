@@ -12,3 +12,6 @@ Download Multiple File with numbered prefix:
 Download by link in txt file:
 	(https://superuser.com/questions/1411804/downloading-youtube-videos-in-a-text-file)
 	youtube-dl -f best -a list.txt
+	
+Download Kitab Turath:
+	youtube-dl -f best -ciw -o "(منظومة المطلب)(في آداب طالب العلم) Ep.%(autonumber)2d.%(ext)s" -a list.txt
