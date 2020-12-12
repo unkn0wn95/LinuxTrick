@@ -1,0 +1,14 @@
+Bypass Download Speed youtube-dl:
+	youtube-dl --external-downloader=aria2c <url>
+	
+Download Multiple File:
+	(https://askubuntu.com/questions/334081/downloading-multiple-files-with-youtube-dl)
+	youtube-dl -f FORMAT -ciw -o "%(title)s.%(ext)s" -v <url-of-playlist>
+	
+Download Multiple File with numbered prefix:
+	(https://askubuntu.com/questions/694848/how-to-download-a-youtube-playlist-with-numbered-prefix-via-youtube-dl)
+	youtube-dl -o "%(playlist_index)2d - %(title)s.%(ext)s" <playlist_link>
+	
+Download by link in txt file:
+	(https://superuser.com/questions/1411804/downloading-youtube-videos-in-a-text-file)
+	youtube-dl -f best -a list.txt
