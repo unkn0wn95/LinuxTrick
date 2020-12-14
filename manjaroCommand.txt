@@ -9,5 +9,8 @@ Install package:
 search package:
 	sudo pacman -Ss nameofpackage
 	
+Remove package:
+	sudo pacman -Rns nameofpackage
+	
 clean autoremove:
 	sudo pacman -Rcns $(pacman -Qdtq) 
