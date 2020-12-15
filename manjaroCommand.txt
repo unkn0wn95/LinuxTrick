@@ -12,5 +12,8 @@ search package:
 Remove package:
 	sudo pacman -Rns nameofpackage
 	
+Clear zsh(bash) history:
+	history -p
+	
 clean autoremove:
 	sudo pacman -Rcns $(pacman -Qdtq) 
