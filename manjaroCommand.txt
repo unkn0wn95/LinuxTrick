@@ -13,7 +13,8 @@ Remove package:
 	sudo pacman -Rns nameofpackage
 	
 Clear zsh(bash) history:
-	history -p
+	(delete temporary)history -p
+	(delete permanently) Edit .zhistory in home directory
 	
 clean autoremove:
 	sudo pacman -Rcns $(pacman -Qdtq) 
