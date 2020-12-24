@@ -57,3 +57,14 @@ php artisan serve
 ```
 Access to http://127.0.0.1:8000
 
+##Access Database Command Line:
+	(https://askubuntu.com/questions/95241/how-do-i-start-the-mysql-console-in-xampp)
+	
+	just start mysql using the command
+		example: sudo /opt/lampp/lampp startmysql
+
+	and find path of mysql , it will be placed in bin directory of lampp, then login
+		example: /opt/lampp/bin/mysql -u root
+
+	
+

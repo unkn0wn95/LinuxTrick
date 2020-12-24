@@ -18,3 +18,6 @@ Clear zsh(bash) history:
 	
 clean autoremove:
 	sudo pacman -Rcns $(pacman -Qdtq) 
+	
+run anaconda:
+	source /opt/anaconda/bin/activate root
