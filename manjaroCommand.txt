@@ -21,3 +21,19 @@ clean autoremove:
 	
 run anaconda:
 	source /opt/anaconda/bin/activate root
+	
+Convert .deb to Manjaro Package:
+	(https://ostechnix.com/convert-deb-packages-arch-linux-packages/)
+	To install debtap using yay, run:
+
+		$ yay -S debtap
+
+	And, make sure your Arch system should have bash, binutils, pkgfile and fakeroot packages installed.
+
+	After installing Debtap and all above mentioned dependencies, run the following command to create/update pkgfile and debtap database.
+
+		$ sudo debtap -u
+	
+	To convert any DEB package, say Quadrapassel, to Arch Linux package using debtap, do:
+
+		$ debtap quadrapassel_3.22.0-1.1_arm64.deb
